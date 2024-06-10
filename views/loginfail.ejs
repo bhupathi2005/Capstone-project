@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Failed</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        *{
+           margin:0;
+           padding:0;
+           box-sizing:border-box;
+           font-family: 'Poppins','sans-serif'; 
+        }
+        section{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:100vh;
+            background: url(' https://wallpapercave.com/wp/wp9764081.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .loginbox{
+            position: relative;
+            width: 400px;
+            background: transparent;
+            border:2px solid rgba(255,255,255, .5);
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(15px);
+            padding: 20px;
+        }
+        h3{
+            color: darkblue;
+            font-family: initial;
+            text-align: center;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            color:#000;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="loginbox">
+        <h3>OOPS!!! Login Failed, Please enter the correct details.</h3>
+        <form action="/logfail" method="post">
+            <button type="submit">Go Back</button>
+        </form>
+    </div>
+    </section>
+</body>
+</html>
